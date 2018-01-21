@@ -1,0 +1,1 @@
+cmd_/home/faye/work/work_normal/gcc_test/kmalloc_test/kmallocModule.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/faye/work/work_normal/gcc_test/kmalloc_test/kmallocModule.ko /home/faye/work/work_normal/gcc_test/kmalloc_test/kmallocModule.o /home/faye/work/work_normal/gcc_test/kmalloc_test/kmallocModule.mod.o ;  true
