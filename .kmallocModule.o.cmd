@@ -1,1 +1,1 @@
-cmd_/home/faye/work/work_normal/gcc_test/kmalloc_test/kmallocModule.o := ld -m elf_x86_64   -r -o /home/faye/work/work_normal/gcc_test/kmalloc_test/kmallocModule.o /home/faye/work/work_normal/gcc_test/kmalloc_test/kmalloc_test.o 
+cmd_/home/faye/work/work_normal/gcc_test/kmemTest/kmallocModule.o := ld -m elf_x86_64   -r -o /home/faye/work/work_normal/gcc_test/kmemTest/kmallocModule.o /home/faye/work/work_normal/gcc_test/kmemTest/kmalloc_test.o 

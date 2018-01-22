@@ -7,28 +7,32 @@
 MODULE_LICENSE( "GPL" );
 MODULE_AUTHOR( "faye" );
 
-unsigned char *cpPagemem;
-unsigned char *cpKmallocmem;
-unsigned char *cpVmallocmem;
+unsigned long *cpPagemem;
+unsigned long *cpKmallocmem;
+unsigned long *cpVmallocmem;
 
 static int __init kmem_init( void ){
 	
 	printk( KERN_INFO "kmem module init!\n" );
 	
-	cpPagemem = ( unsigned char * )__get_free_page( 0 );
-	printk( KERN_INFO "pageMem addr: %lu\n", (unsigned long)cpPagemem );
+	cpPagemem = ( unsigned long * )__get_free_page( 0 );
+	printk( KERN_INFO "pageMem addr: %lu\n", ( unsigned long )cpPagemem );
+	printk( KERN_INFO "pageMem addr: %lX\n", ( unsigned long )cpPagemem );
 
-	cpKmallocmem = 	( unsigned char * )kmalloc( 10,0 );
-	printk( KERN_INFO "kmallocMem addr: %lu\n", (unsigned long)cpKmallocmem );
 
-	cpVmallocmem = ( unsigned char * )vmalloc( 10 );
-	printk( KERN_INFO "vmallocMem addr: %lu\n", (unsigned long)cpVmallocmem );
+	cpKmallocmem = ( unsigned long * )kmalloc( 10,0 );
+	printk( KERN_INFO "kmallocMem addr: %lu\n", ( unsigned long )cpKmallocmem );
+	printk( KERN_INFO "kmallocMem addr: %lX\n", ( unsigned long )cpKmallocmem );
+
+	cpVmallocmem = ( unsigned long * )vmalloc( 10 );
+	printk( KERN_INFO "vmallocMem addr: %lu\n", ( unsigned long )cpVmallocmem );
+	printk( KERN_INFO "vmallocMem addr: %lX\n", ( unsigned long )cpVmallocmem );
 
 	return 0;
 }
 
-void __exit kmem_exit( void ){	
-	free_page( (unsigned long)cpPagemem );
+static void __exit kmem_exit( void ){	
+	free_page( ( unsigned long )cpPagemem );
 	kfree( cpKmallocmem );
 	vfree( cpVmallocmem );
 	printk( KERN_INFO "kmem module exit!\n" );
