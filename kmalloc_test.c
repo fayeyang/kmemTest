@@ -16,16 +16,16 @@ static int __init kmem_init( void ){
 	printk( KERN_INFO "kmem module init!\n" );
 	
 	cpPagemem = ( unsigned long * )__get_free_page( 0 );
-	printk( KERN_INFO "pageMem addr: %lu\n", ( unsigned long )cpPagemem );
+	//printk( KERN_INFO "pageMem addr: %lu\n", ( unsigned long )cpPagemem );
 	printk( KERN_INFO "pageMem addr: %lX\n", ( unsigned long )cpPagemem );
 
 
 	cpKmallocmem = ( unsigned long * )kmalloc( 10,0 );
-	printk( KERN_INFO "kmallocMem addr: %lu\n", ( unsigned long )cpKmallocmem );
+	//printk( KERN_INFO "kmallocMem addr: %lu\n", ( unsigned long )cpKmallocmem );
 	printk( KERN_INFO "kmallocMem addr: %lX\n", ( unsigned long )cpKmallocmem );
 
-	cpVmallocmem = ( unsigned long * )vmalloc( 10 );
-	printk( KERN_INFO "vmallocMem addr: %lu\n", ( unsigned long )cpVmallocmem );
+	cpVmallocmem = ( unsigned long * )vmalloc( 500*1024 );
+	//printk( KERN_INFO "vmallocMem addr: %lu\n", ( unsigned long )cpVmallocmem );
 	printk( KERN_INFO "vmallocMem addr: %lX\n", ( unsigned long )cpVmallocmem );
 
 	return 0;

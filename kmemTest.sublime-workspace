@@ -19,22 +19,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "kmalloc_test.c",
-			"settings":
-			{
-				"buffer_size": 969,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Makefile",
-			"settings":
-			{
-				"buffer_size": 684,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -88,12 +72,15 @@
 	},
 	"file_history":
 	[
+		"/home/faye/work/work_normal/gcc_test/kmalloc_test/kmalloc_test.c",
+		"/home/faye/work/work_normal/gcc_test/kmalloc_test/.git/COMMIT_EDITMSG",
+		"/home/faye/work/work_normal/gcc_test/kobject_test/kobject_test.c",
+		"/home/faye/work/work_normal/gcc_test/kmalloc_test/Makefile",
 		"/home/faye/work/work_normal/gcc_test/device_driver_test/driver_test/driver_test.c",
 		"/home/faye/work/work_normal/gcc_test/device_driver_test/device_test/device_test.c",
 		"/home/faye/work/work_normal/gcc_test/device_driver_test/bus_test.c",
 		"/home/faye/work/work_normal/gcc_test/kobject_test/Makefile",
 		"/home/faye/work/work_normal/gcc_test/kobject_test/kobject_test.h",
-		"/home/faye/work/work_normal/gcc_test/kobject_test/kobject_test.c",
 		"/home/faye/work/work_normal/gcc_test/kobject_test/.git/COMMIT_EDITMSG",
 		"/home/faye/work/work_normal/gcc_test/kobject_test/main.c",
 		"/mnt/DTSE9/work/gsync.log",
@@ -174,7 +161,7 @@
 	],
 	"find":
 	{
-		"height": 53.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -240,72 +227,14 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "kmalloc_test.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 969,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Makefile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 684,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 48.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -342,7 +271,7 @@
 	"project": "kmemTest.sublime-project",
 	"replace":
 	{
-		"height": 92.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -384,7 +313,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 217.0,
+	"side_bar_width": 161.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
