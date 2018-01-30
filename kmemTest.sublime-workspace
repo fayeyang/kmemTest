@@ -72,8 +72,9 @@
 	},
 	"file_history":
 	[
-		"/home/faye/work/work_normal/gcc_test/kmalloc_test/kmalloc_test.c",
 		"/home/faye/work/work_normal/gcc_test/kmalloc_test/.git/COMMIT_EDITMSG",
+		"/home/faye/work/work_normal/gcc_test/kmalloc_test/kmalloc_test.c",
+		"/home/faye/.bashrc",
 		"/home/faye/work/work_normal/gcc_test/kobject_test/kobject_test.c",
 		"/home/faye/work/work_normal/gcc_test/kmalloc_test/Makefile",
 		"/home/faye/work/work_normal/gcc_test/device_driver_test/driver_test/driver_test.c",
